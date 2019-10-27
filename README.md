@@ -1,15 +1,9 @@
-# 🚀 Welcome
+ここではThree.jsを試す。  
 
-This project has been created using **webpack scaffold**, you can now run
 
-```
-npm run build
-```
+#### DEMO
+<https://mi77jp.github.io/webgl-trial/?letter=%E4%BA%80>
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+#### 使用フォントについて
+白川静の名を冠する白川フォントで中国古代の金文文字を表示してみた。  
+<http://www.ritsumei.ac.jp/acd/re/k-rsc/sio/shirakawa/>

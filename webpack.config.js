@@ -1,17 +1,17 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: './src/app.js',
 
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: '[name].js',//'[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist')
   },
 
-  plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()],
+  plugins: [new webpack.ProgressPlugin()], //new HtmlWebpackPlugin()],
 
   module: {
     rules: [
@@ -22,7 +22,6 @@ module.exports = {
 
         options: {
           plugins: ['syntax-dynamic-import'],
-
           presets: [
             [
               '@babel/preset-env',
